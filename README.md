@@ -411,6 +411,10 @@ Message/system prompt locations:
 - `src/belvo_finance_agent/response_polisher.py`: `POLISH_SYSTEM_PROMPT`, used by the Anthropic Messages API polish layer.
 - `docs/skills/*.md`: compact Open Finance schema, filtering and safety context loaded by workflow.
 
+### Use of coding agents
+
+Codex was used to accelerate implementation planning, regression-test generation, manual prompt validation, documentation drafting and iterative bug fixing. The final design decisions, validation and correctness checks were reviewed by the author.
+
 ## Chart example
 
 Example prompt:
@@ -600,7 +604,7 @@ Food, salary, subscriptions and recurring expenses use categories first and desc
 
 ## Use of coding agents
 
-Codex and ChatGPT were used to accelerate implementation planning, regression-test generation, manual prompt validation, documentation drafting and iterative bug fixing. The final design decisions, validation and correctness checks were reviewed by the author. Coding agents were especially useful for turning prompt failures into regression tests and keeping README claims aligned with actual code behavior.
+Codex was used to accelerate implementation planning, regression-test generation, manual prompt validation, documentation drafting and iterative bug fixing. The final design decisions, validation and correctness checks were reviewed by the author. Coding agents were especially useful for turning prompt failures into regression tests and keeping README claims aligned with actual code behavior.
 
 ## Project structure
 
