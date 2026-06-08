@@ -1,0 +1,103 @@
+questions:
+  - question: "What's my current balance across all my accounts?"
+    expected_workflow: balance_summary
+    expected_tools: [list_accounts]
+  - question: "How much I spent today?"
+    expected_workflow: spending_summary
+    expected_tools: [list_transactions]
+  - question: "when I last did a payment"
+    expected_workflow: transaction_query_last
+    expected_tools: [list_transactions]
+  - question: "qual foi a data do meu ultimo gasto"
+    expected_workflow: transaction_query_last
+    expected_tools: [list_transactions]
+  - question: "qual foi meu maior gasto ontem"
+    expected_workflow: transaction_query_biggest
+    expected_tools: [list_transactions]
+  - question: "qual foi meu maior gasto em maio"
+    expected_workflow: transaction_query_biggest
+    expected_tools: [list_transactions]
+  - question: "what was my biggest expense on May"
+    expected_workflow: transaction_query_biggest
+    expected_tools: [list_transactions]
+  - question: "show me all my expenses in May"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "How much did I spend on food in the last 30 days?"
+    expected_workflow: food_spending
+    expected_tools: [list_transactions]
+  - question: "Did my salary come in this month?"
+    expected_workflow: salary_detection
+    expected_tools: [list_transactions]
+  - question: "Show me transactions over R$ 500 in the last 90 days."
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "What's my biggest recurring expense?"
+    expected_workflow: recurring_expense_detection
+    expected_tools: [list_transactions]
+  - question: "How much money came in vs went out last month?"
+    expected_workflow: cash_flow_last_month
+    expected_tools: [list_transactions]
+  - question: "show me only PIX transactions"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "how much did I send by PIX?"
+    expected_workflow: transaction_query_total
+    expected_tools: [list_transactions]
+  - question: "how much did I receive by PIX?"
+    expected_workflow: transaction_query_total
+    expected_tools: [list_transactions]
+  - question: "show me all credit card transactions"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "what was my biggest card charge?"
+    expected_workflow: transaction_query_biggest
+    expected_tools: [list_transactions]
+  - question: "what was my latest expense?"
+    expected_workflow: transaction_query_last
+    expected_tools: [list_transactions]
+  - question: "show me my payments on 22 of May"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "liste meus gastos em 22 de maio"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "me mostre meus pagamentos em 22 de maio"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "show me all Netflix transactions"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "show me Netflix payments"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "how much did I spend on Netflix?"
+    expected_workflow: transaction_query_total
+    expected_tools: [list_transactions]
+  - question: "quanto recebi por PIX?"
+    expected_workflow: transaction_query_total
+    expected_tools: [list_transactions]
+  - question: "how much did I spend on subscriptions?"
+    expected_workflow: transaction_query_total
+    expected_tools: [list_transactions]
+  - question: "show me all expenses below R$ 100"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "show me all Nubank transactions"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "list transactions specific from Nubank"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "what was my last Nubank payment?"
+    expected_workflow: transaction_query_last
+    expected_tools: [list_transactions]
+  - question: "show me Itau checking expenses"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "show me Itau savings transactions"
+    expected_workflow: transaction_query_list
+    expected_tools: [list_transactions]
+  - question: "Create a new transaction for R$ 100."
+    expected_workflow: read_only_refusal
+    expected_tools: []
